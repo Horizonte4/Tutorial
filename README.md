@@ -1,6 +1,6 @@
-# Tutorial Django (sin Anaconda)
+# Tutorial Django 
 
-## Cómo correr el proyecto (Windows)
+## Cómo correr el proyecto 
 
 ### 1) Crear entorno virtual
 ```bash
@@ -19,7 +19,7 @@ pip install django factory_boy
 py manage.py makemigrations
 py manage.py migrate
 ```
-###5) (Opcional) Cargar productos de prueba
+###5) Cargar productos de prueba
 ```bash
 py manage.py seed_products
 ```
