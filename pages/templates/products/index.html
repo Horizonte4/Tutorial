@@ -1,0 +1,22 @@
+{% extends 'pages/base.html' %}
+{% block title %}{{ title }}{% endblock %}
+{% block header_title %}{{ subtitle }}{% endblock %}
+
+{% block content %}
+<div class="row">
+  {% for product in products %}
+    <div class="col-md-4 mb-3">
+      <div class="card h-100">
+        <div class="card-body">
+          <h5>{{ product.name }}</h5>
+          <p>{{ product.description|default:"No description" }}</p>
+          <p><strong>${{ product.price }}</strong></p>
+          <a href="/products/{{ product.id }}" class="btn btn-sm btn-primary">View</a>
+        </div>
+      </div>
+    </div>
+  {% empty %}
+    <p>No products yet.</p>
+  {% endfor %}
+</div>
+{% endblock %}
