@@ -6,24 +6,24 @@
 ```bash
 py -m venv .venv
 ```
-###2) Activar entorno virtual
+### 2) Activar entorno virtual
  ```bash
 .venv\Scripts\activate
 ```
-###3) Instalar dependencias
+### 3) Instalar dependencias
 ```bash
 pip install django factory_boy
 ```
-###4) Aplicar migraciones
+### 4) Aplicar migraciones
 ```bash
 py manage.py makemigrations
 py manage.py migrate
 ```
-###5) Cargar productos de prueba
+### 5) Cargar productos de prueba
 ```bash
 py manage.py seed_products
 ```
-###6) Ejecutar servidor
+### 6) Ejecutar servidor
 ```bash
 py manage.py runserver
 ```
