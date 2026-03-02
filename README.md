@@ -27,3 +27,12 @@ py manage.py seed_products
 ```bash
 py manage.py runserver
 ```
+preguntas tutorial
+
+Con DI / DIP
+
+La vista depende de una abstracción (ImageStorage)
+
+Sin DI
+
+La vista depende directamente de ImageLocalStorage
